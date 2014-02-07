@@ -1,19 +1,19 @@
 Summary:	Userspace InfiniBand MAD library
 Summary(pl.UTF-8):	Biblioteka InfiniBand MAD dla przestrzeni użytkownika
 Name:		libibumad
-Version:	1.3.8
+Version:	1.3.9
 Release:	1
 License:	BSD or GPL v2
 Group:		Libraries
 Source0:	http://www.openfabrics.org/downloads/management/%{name}-%{version}.tar.gz
-# Source0-md5:	dadad9caebc974d8c0cdd9131b117c16
+# Source0-md5:	52a81356906f4faf29a6cf9583161aa8
 URL:		http://www.openfabrics.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 libibumad provides the user MAD library functions which sit on top of
-the user MAD modules in the kernel. These are used by the IB diagnostic
-and management tools, including OpenSM.
+the user MAD modules in the kernel. These are used by the IB
+diagnostic and management tools, including OpenSM.
 
 %description -l pl.UTF-8
 libibumad to biblioteka udostępniająca funkcje MAD w przestrzeni
