@@ -1,13 +1,13 @@
 Summary:	Userspace InfiniBand MAD library
 Summary(pl.UTF-8):	Biblioteka InfiniBand MAD dla przestrzeni użytkownika
 Name:		libibumad
-Version:	1.3.9
+Version:	1.3.10.1
 Release:	1
 License:	BSD or GPL v2
 Group:		Libraries
-Source0:	http://www.openfabrics.org/downloads/management/%{name}-%{version}.tar.gz
-# Source0-md5:	52a81356906f4faf29a6cf9583161aa8
-URL:		http://www.openfabrics.org/
+Source0:	https://www.openfabrics.org/downloads/management/%{name}-%{version}.tar.gz
+# Source0-md5:	2fa06c98f025f2153621d66b16203405
+URL:		https://www.openfabrics.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -76,6 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libibumad.so
 %{_libdir}/libibumad.la
 %{_includedir}/infiniband/umad.h
+%{_includedir}/infiniband/umad_*.h
 %{_mandir}/man3/umad_*.3*
 
 %files static
